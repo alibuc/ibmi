@@ -42,7 +42,7 @@ Run `./ibmi_ptf_pull.py --help` for all options.
   PTF, download link, bulletin).
 - `ibmi_<release>_ptf_order_list.txt` — unique PTFs to order, with the CVEs
   (and severity) each one fixes.
-- A severity summary is printed to the terminal (colorized when supported).
+- A severity summary is printed to the terminal.
 
 ## Requirements
 
