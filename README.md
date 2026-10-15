@@ -6,9 +6,13 @@ security bulletins, and produce a per-CVE CSV plus a "what to order" PTF list.
 ## How it works
 
 Discovery uses IBM's bulletin JSON API; bulletin bodies are parsed from the
-server-rendered HTML. The API only exposes the newest ~1000 records, so every
-run merges the snapshot into a local cache:
+server-rendered HTML. 
+
+The API only exposes the newest ~1000 records, 
+so every run merges the snapshot into a local cache:
+
 (`--cache-dir`, default `~/.cache/ibm_ptf_pull` or `$IBM_PTF_CACHE_DIR`).
+
 Run daily (cron) and the cache accumulates history beyond the API window.
 
 ## Usage
